@@ -12,12 +12,12 @@ export const Overview = () => {
 				<div className="row">
 					<ColumnGraph
 						months={data["Monthly Tracking"]}
-						filter={["JANUARY", "FEBRUARY"]}
+						filter={["MARCH", "APRIL"]}
 					/>
 				</div>
 			</section>
 
-			<h2 className="sub-heading">February Breakdown</h2>
+			<h2 className="sub-heading">April Breakdown</h2>
 			<section className="chart_wrap">
 				<div className="overview-card">
 					<Donut
@@ -27,7 +27,7 @@ export const Overview = () => {
 							"Confidential Paper",
 							"Rigids      (refundable & non)",
 						]}
-						selectedMonth="FEBRUARY"
+						selectedMonth="APRIL"
 						label="Cascade Recovery"
 					/>
 				</div>
