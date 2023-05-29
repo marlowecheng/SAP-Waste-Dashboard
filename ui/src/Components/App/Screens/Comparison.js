@@ -19,7 +19,7 @@ export const Comparison = () => {
 						<h2>Cascade Recovery</h2>
 						<CascadeComponent
 							months={data["Monthly Tracking"]}
-							filter={["JANUARY", "FEBRUARY"]}
+							filter={["MARCH", "APRIL"]}
 						/>
 						<ImageComponent title="cascade" />
 					</div>
@@ -27,7 +27,7 @@ export const Comparison = () => {
 						<h2>Eco Action</h2>
 						<EcoActionComponent
 							months={data["Monthly Tracking"]}
-							filter={["JANUARY", "FEBRUARY"]}
+							filter={["MARCH", "APRIL"]}
 						/>
 						<ImageComponent title="ecoAction" />
 					</div>
@@ -37,7 +37,7 @@ export const Comparison = () => {
 						<h2>Waste Control Services</h2>
 						<WasteServiceComponent
 							months={data["Monthly Tracking"]}
-							filter={["JANUARY", "FEBRUARY"]}
+							filter={["MARCH", "APRIL"]}
 						/>
 						<ImageComponent title="waste" />
 					</div>
@@ -45,7 +45,7 @@ export const Comparison = () => {
 						<h2>Refundables</h2>
 						<RefundablesComponent
 							months={data["Monthly Tracking"]}
-							filter={["JANUARY", "FEBRUARY"]}
+							filter={["MARCH", "APRIL"]}
 						/>
 						<div className="refundables">
 							<ImageComponent title="refund" />
