@@ -24,9 +24,9 @@ function BarGraph({ months }) {
 			dataset={[
 				{
 					name: "     ",
-					sessions: 300,
-					users: 100,
-					volume: 756,
+					users: 46,
+					sessions: 302,
+					volume: 858,
 				},
 			]}
 			dimensions={[
