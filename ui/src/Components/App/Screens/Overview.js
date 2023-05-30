@@ -32,7 +32,10 @@ export const Overview = () => {
 					/>
 				</div>
 				<div className="overview-card">
-					<BarGraph months={data["Monthly Tracking"]} />
+					<BarGraph 
+						months={data["Monthly Tracking"]} 
+						filter={["APRIL"]}
+					/>
 				</div>
 			</section>
 		</>
