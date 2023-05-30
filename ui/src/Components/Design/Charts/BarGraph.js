@@ -1,34 +1,25 @@
 import { BarChart } from "@ui5/webcomponents-react-charts";
 
-function BarGraph({ months }) {
+function BarGraph({ months, filter }) {
 	let result = [];
 
-	months = months.slice(0);
-	months.pop();
-
 	for (const [key, month] of Object.entries(months)) {
-		result.push({
-			month: month["Month"],
-			cascadeTotal:
-				month["Rigids      (refundable & non)"] +
-				month["Mixed Paper/Fiber"],
-			ecoactionTotal: month["Compost"],
-			wasteTotal: month["Garbage"],
-			coffeeTotal: month["Coffee Grounds"],
-		});
+		const includesInMonthsArrayFilter = filter.includes(month.Month)
+		
+		if (filter.includes(month.Month)) {
+			result.push({
+				month: month["Month"],
+				ecoactionTotal: month["Compost"],
+				wasteTotal: month["Garbage"],
+				coffeeTotal: month["Coffee Grounds"],
+			});
+		}
 	}
 
 	return (
 		<BarChart
 			style={{ height: "325px" }}
-			dataset={[
-				{
-					name: "     ",
-					users: 46,
-					sessions: 302,
-					volume: 858,
-				},
-			]}
+			dataset={result}
 			dimensions={[
 				{
 					accessor: "name",
@@ -36,17 +27,17 @@ function BarGraph({ months }) {
 			]}
 			measures={[
 				{
-					accessor: "users",
+					accessor: "coffeeTotal",
 					label: "Coffee Grounds",
 					color: "#e6873a",
 				},
 				{
-					accessor: "sessions",
+					accessor: "wasteTotal",
 					label: "Landfill",
 					color: "grey",
 				},
 				{
-					accessor: "volume",
+					accessor: "ecoactionTotal",
 					label: "Compost",
 				},
 			]}
