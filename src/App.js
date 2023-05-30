@@ -1,85 +1,72 @@
 import './App.css';
 import { Card, Metric, Text, Title, BarChart, Subtitle, AreaChart, DonutChart, Flex, BadgeDelta, Badge, BarList, Bold} from "@tremor/react";
-import cascadeImg from './cascade-recovery.svg'
+import cascadeImg from './cascade-recovery.svg';
+import employeePresence from './Employees.svg';
+import greenTeamCard from './SAPGREENTEAMCARDCOLLECTIONV2.png';
+import napkinHero from './NapkinHeroV2.png';
+import ddaLogo from './DDALOGO.png';
+import anishaCard from './Anisha_CardPhoto.jpg';
+
 import { Carousel, Typography } from '@material-tailwind/react';
 
   //Creating an array for the data to be inputted into the 'Solid Waste Diversion' Card
   const recycling = [
     {
-      name: 'Recycling',
-      value: '4754'
-    },
-    {
-      name: 'Organics',
-      value: '2534',
+      name: 'Diversion',
+      value: '64'
     },
     {
       name: 'Landfill',
-      value: '987',
+      value: '36',
     }
   ]
-
-
 
   export default () => (
   <div>
 
-    <div className='flex'>
-      <Card 
-        className="max-w-xs mx-auto mt-10 mb-10 flex bg-bgmain" 
-        decoration="top" 
-        decorationColor="indigo">
-        <img 
-          className=''
-          width={100}
-          height={80}
-          src={cascadeImg}
-        />
-
-        <div 
-          className='flex flex-col mx-12'
-        >
-          <Text
-            className='text-lg text-indigo-600 font-bold'
-          >April
-          </Text>
-          <BadgeDelta
-            isIncreasePositive={true}
-            size="xl"
-          >3.48%
-          </BadgeDelta>
-          <Text
-            className='text-lg text-indigo-600 font-bold'
-          >March</Text>
-          <BadgeDelta
-            deltaType='decrease'
-            isIncreasePositive={true}
-            size="xl"
-          >3.48%
-          </BadgeDelta>
-        </div>
-      </Card>
+    <Flex>
+      <Flex
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Card className="max-w-sm mx-auto mt-10 mb-10 flex bg-bgmain">
+          <img 
+            width={100}
+            height={80}
+            src={employeePresence}/>
+          <div className='flex flex-col items-center justify-center mx-12 p-10'>
+            <Text className='text-lg text-indigo-600 font-bold'>March</Text>
+            <BadgeDelta
+              deltaType='decrease'
+              isIncreasePositive={true}
+              size="xl"
+            >3.48%
+            </BadgeDelta>
+          </div>
+        </Card>
+      </Flex>
       
-      <Flex className='flex-col m-10'>
-        <div>
-          <Title 
-            className=''
-          >Solid Waste Diversion</Title>
-        </div>
+
+      <Flex
+        justifyContent='center'
+        alignItems='center'
+        className='m-10'>
+        {/* <div>
+          <Title>Solid Waste Diversion</Title>
+        </div> */}
         <Card className="max-w-lg bg-bgmain">
           <Flex className="mt-4">
             <Text>
-              <Bold>MARCH</Bold>
+              <Bold>March</Bold>
             </Text>
             <Text>
-              <Bold>Total (KG)</Bold>
+              <Bold>Total %</Bold>
             </Text>
           </Flex>
           <BarList data={recycling} className="mt-2" />
         </Card>
       </Flex>
-
-    </div>
+    </Flex>
 
 
     {/* Middle Carousel Section */}
@@ -222,12 +209,11 @@ import { Carousel, Typography } from '@material-tailwind/react';
         <Card className="max-w-3xl mx-auto bg-bgmain mt-12 mb-12">
           <div>
             <Flex>
-              <div className='flex flex-row m-8 gap-x-32'>
+              <div className='flex flex-row m-8 gap-x-20'>
                 <img 
-                  className=''
-                  width={180}
-                  height={180}
-                  src={cascadeImg}
+                 className='rounded-lg'
+                  width={230}
+                  src={anishaCard}
                 /> 
                 <div className='w-[350px]'>
                   <h1 className='text-3xl text-textmain font-bold'>SAP Greenest Employer 2023</h1>
@@ -242,19 +228,18 @@ import { Carousel, Typography } from '@material-tailwind/react';
         <Card className="max-w-3xl mx-auto bg-bgmain mt-12 mb-12">
           <div>
             <Flex>
+            <div className='flex flex-row gap-x-32'>
+                <img 
+                  className=''
+                  src={greenTeamCard}
+                />    
+              </div>
               <div>
                 <h1 className='text-3xl text-textmain font-bold'>Meet the 2023 SAP Green Team</h1>
-                <div className='w-[500px]'>
+                <div className='w-[400px]'>
                   <p className='text-textmain mt-4 max-w'>The SAP Green Team proudly welcomes Amanna, Anisha, Christopher, Dave, Josh, Kayla, Marlowe and Tiffany from BCIT’s New Media Design & Web Development program as summer interns 2023. The group took on the task of redesign the waste dashboard as a more engaging experience that brings a deeper understanding of SAP’s environmental impacts.</p>
                 </div>
               </div>
-              <div>
-                <img 
-                  className='mb-5'
-                  height={180}
-                  src={cascadeImg}
-                />    
-              </div>
             </Flex>
           </div>
         </Card>
@@ -263,19 +248,19 @@ import { Carousel, Typography } from '@material-tailwind/react';
         <Card className="max-w-3xl mx-auto bg-bgmain mt-12 mb-12">
           <div>
             <Flex>
-              <div>
+            <div className='p-8'>
+                <img 
+                  className='mb-5'
+                  height={180}
+                  src={ddaLogo}
+                />    
+              </div>
+              <div className='p-4'>
                 <h1 className='text-3xl text-textmain font-bold'>DDA Donations 2023 SAP Green Team</h1>
-                <div className='w-[500px]'>
+                <div className='w-[350px]'>
                   <p className='text-textmain mt-4 max-w'>Your recycling efforts raised a total of $[number] last month for the Developmental Disabilities Association. The Developmental Disabilities Association provides community-based programs and services to individuals and their families living with developmental disabilities in the Vancouver and Richmond area.</p>
                 </div>
               </div>
-              <div>
-                <img 
-                  className='mb-5'
-                  height={180}
-                  src={cascadeImg}
-                />    
-              </div>
             </Flex>
           </div>
         </Card>
@@ -283,21 +268,11 @@ import { Carousel, Typography } from '@material-tailwind/react';
 
         <Card className="max-w-3xl mx-auto bg-bgmain mt-12 mb-12">
           <div>
-            <Flex>
-              <div className=''>
-                <h1 className='text-3xl text-textmain font-bold'>SAP Greenest Employer 2023</h1>
-                <div className='w-[500px]'>
-                  <p className='text-textmain mt-4 max-w'>Did you know SAP Labs Vancouver is recognized as one of Canada’s Greenest Employers for 2023? Our goal was to maintain our waste diversion program to meet or exceed 80% of total weight of 13195 kg from 2021. As of the end of 2022, the waste diverted is 97%!</p>
-                </div>
-              </div>
-              <div>
-                <img 
-                  className='mb-5'
-                  height={180}
-                  src={cascadeImg}
-                />    
-              </div>
-            </Flex>
+            <img 
+              className='mb-5'
+              height={180}
+              src={napkinHero}
+              />    
           </div>
         </Card>
         
