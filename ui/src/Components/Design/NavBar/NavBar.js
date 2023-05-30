@@ -18,6 +18,12 @@ export const NavBar = () => {
 					<StandardListItem data-key="1">
 						<Link to="/comparison">Comparison</Link>
 					</StandardListItem>
+					<StandardListItem data-key="1">
+						<Link to="/home">Home</Link>
+					</StandardListItem>
+					<StandardListItem data-key="1">
+						<Link to="/insights">Insights</Link>
+					</StandardListItem>
 				</>
 			}
 			primaryTitle="Waste Diversion Dashboard"
