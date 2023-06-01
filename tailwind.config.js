@@ -12,7 +12,20 @@ module.exports = withMT({
   theme: {
     colors: { 
       'bgmain': '#D1FAFF',
-      'textmain': '#132448'
+      'bgsecondary': '#54C6D5',
+      'textmain': '#132448',
+      'cascadeBorder': '#6FB0E0',
+      'ecoBorder': '#5D9340',
+      'wasteBorder': '#343333',
+      'refundBorder': '#1847C0',
+      'pillBgGreen': '#53C340',
+      'pillBgRed': '#E25E5E',
+      'pillTextGreen': '#2E602F',
+      'pillTextRed': '#DF4834',
+      'ecoActionBg': '#557445',
+      'wasteBg': '#343333',
+      'refundableBg': '#1847C0',
+      'cascadeBg': '#54A4DF',
     }, 
     extend: {},
   },
