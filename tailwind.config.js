@@ -26,6 +26,7 @@ module.exports = withMT({
       'wasteBg': '#343333',
       'refundableBg': '#1847C0',
       'cascadeBg': '#54A4DF',
+      'insightBtn': '#45A5B1'
     }, 
     extend: {},
   },
