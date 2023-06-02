@@ -1,25 +1,25 @@
-import './App.css';
+import './style/App.css';
 import Footer from './footer';
 import { Card, Metric, Text, Title, BarChart, Subtitle, AreaChart, DonutChart, Flex, BadgeDelta, Badge, BarList, Bold} from "@tremor/react";
 import { Carousel, Typography, IconButton, Chip, Navbar, MobileNav, Button, } from '@material-tailwind/react';
 import { ChevronLeftIcon, ArrowRightIcon, ChevronRightIcon, ArrowUpIcon, ArrowDownIcon } from "@heroicons/react/24/outline";
 import { Icon } from '@tremor/react/dist';
-import cascadeImg from './cascade-recovery.svg';
-import employeePresence from './Employees.svg';
-import greenTeamCard from './SAPGREENTEAMCARDCOLLECTIONV2.png';
-import napkinHero from './NapkinHeroV2.png';
-import ddaLogo from './DDALOGO.png';
-import anishaCard from './Anisha_CardPhoto.jpg';
-import footerLogo from './SAPVECTORLOGO.svg';
-import cascadeImage from './cascade-recovery-lineup.svg';
-import ecoActionImage from './eco-action-lineup.svg';
-import refundableImage from './refundables-lineup.svg';
-import wasteImage from './waste-management-lineup.svg';
-import ecoServiceCard from './eco-action.svg';
-import wasteServiceCard from './wastemanagement.svg';
-import refundServiceCard from './refundables.svg';
-import heroBackground from './SAPVECTORLOGO-COLOR.svg';
-import sapLogo from './sap-logo-svg.svg'
+import cascadeImg from './assets/cascade-recovery.svg';
+import employeePresence from './assets/Employees.svg';
+import greenTeamCard from './assets/SAPGREENTEAMCARDCOLLECTIONV2.png';
+import napkinHero from './assets/NapkinHeroV2.png';
+import ddaLogo from './assets/DDALOGO.png';
+import anishaCard from './assets/Anisha_CardPhoto.jpg';
+import footerLogo from './assets/SAPVECTORLOGO.svg';
+import cascadeImage from './assets/cascade-recovery-lineup.svg';
+import ecoActionImage from './assets/eco-action-lineup.svg';
+import refundableImage from './assets/refundables-lineup.svg';
+import wasteImage from './assets/waste-management-lineup.svg';
+import ecoServiceCard from './assets/eco-action.svg';
+import wasteServiceCard from './assets/wastemanagement.svg';
+import refundServiceCard from './assets/refundables.svg';
+import heroBackground from './assets/SAPVECTORLOGO-COLOR.svg';
+import sapLogo from './assets/sap-logo-svg.svg'
 
 
   //Creating an array for the data to be inputted into the 'Solid Waste Diversion' Card
