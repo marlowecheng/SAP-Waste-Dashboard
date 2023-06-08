@@ -1,5 +1,5 @@
 import './style/App.css';
-import Footer from './footer';
+import Footer from './components/layouts/Footer';
 import { Card, Metric, Text, Title, BarChart, Subtitle, AreaChart, DonutChart, Flex, BadgeDelta, Badge, BarList, Bold} from "@tremor/react";
 import { Carousel, Typography, IconButton, Chip, Navbar, MobileNav, Button, } from '@material-tailwind/react';
 import { ChevronLeftIcon, ArrowRightIcon, ChevronRightIcon, ArrowUpIcon, ArrowDownIcon } from "@heroicons/react/24/outline";
@@ -46,6 +46,7 @@ import sapLogo from './assets/sap-logo-svg.svg'
         <button className='rounded-full w-32 h-10 mt-4 bg-insightBtn text-white mr-10'>Insights</button>
       </div>
     </div>
+
     <div className='bg-bgmain py-4 flex justify-evenly items-center border-b-[60px] border-textmain'>
       <div className='flex flex-col'>
         <h1 className='text-textmain font-bold text-5xl z-10'>Reveal the Green</h1>
